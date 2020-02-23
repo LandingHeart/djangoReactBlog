@@ -1,0 +1,11 @@
+{
+  "python.pythonPath": "/usr/local/Cellar/python/3.7.4/Frameworks/Python.framework/Versions/3.7/bin/python3",
+  "editor.formatOnSave": true,
+  "python.linting.pylintPath": "pylint",
+  "python.linting.pylintArgs": ["--load-plugins", "pylint_django"],
+  "python.linting.pylintEnabled": true,
+  "python.linting.enabled": true,
+  "python.venvPath": "${workspaceFolder}/backend/env/bin/python3",
+  "python.linting.pycodestyleEnabled": true,
+  "python.linting.pycodestyleArgs": ["--ignore=E501"]
+}
