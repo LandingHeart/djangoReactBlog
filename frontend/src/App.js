@@ -1,16 +1,17 @@
 import React from "react";
-import logo from "./logo.svg";
-import "./App.css";
-import "antd/dist/antd.css";
-import ArticleList from "./container/ArticleListView";
 import CustomLayout from "./container/CustomLayout";
+import { BrowserRouter as Router } from "react-router-dom";
+import Routes from "./Routes";
+import "antd/dist/antd.css";
 
 function App() {
   return (
     <div className="App">
-      <CustomLayout>
-        <ArticleList />
-      </CustomLayout>
+      <Router>
+        <CustomLayout>
+          <Routes />
+        </CustomLayout>
+      </Router>
     </div>
   );
 }
