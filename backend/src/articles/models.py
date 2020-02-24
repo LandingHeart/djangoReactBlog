@@ -6,7 +6,7 @@ from django.db import models
 class Article(models.Model):
     title = models.CharField(max_length=120)
     content = models.TextField()
-    description = models.TextField()
+    description = models.TextField(max_length=240, default="")
 
     def __str__(self):
         return self.title
