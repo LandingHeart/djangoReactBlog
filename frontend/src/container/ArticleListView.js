@@ -3,9 +3,13 @@ import Articles from "../component/Articles";
 import axios from "axios";
 
 export default class ArticleListView extends Component {
-  state = {
-    articles: []
-  };
+  constructor(props) {
+    super(props);
+    this.state = {
+      articles: []
+    };
+  }
+
   componentDidMount() {
     axios.get("http://127.0.0.1:8000/api").then(res => {
       this.setState({

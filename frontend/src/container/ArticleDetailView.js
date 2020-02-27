@@ -2,9 +2,13 @@ import React, { Component } from "react";
 import axios from "axios";
 import { Card } from "antd";
 export default class ArticleDetailView extends Component {
-  state = {
-    article: {}
-  };
+  constructor(props) {
+    super(props);
+    this.state = {
+      article: {}
+    };
+  }
+
   componentDidMount() {
     const articleID = this.props.match.params.articleID;
 
